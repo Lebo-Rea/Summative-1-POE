@@ -1,0 +1,192 @@
+/* Styles the website header */
+header {
+    padding: 25px;
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    border-bottom: 6px solid #d4af37;
+}
+
+/* Styles the church logo */
+header img {
+    width: 220px;
+    height: auto;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+}
+
+/* Styles the church name */
+header h1 {
+    margin: 10px 0 5px;
+    color: white;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 38px;
+    font-weight: normal;
+}
+
+/* Styles the church slogan */
+header p {
+    margin: 5px 0 20px;
+    color: #e2c66f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Styles the navigation menu */
+nav {
+    margin: 20px -25px -25px;
+    padding: 16px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #d4af37;
+}
+
+/* Styles the navigation links */
+nav a {
+    display: inline-block;
+    margin: 2px 5px;
+    padding: 8px 12px;
+    color: #002f6c;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Changes the navigation link when the mouse moves over it */
+nav a:hover {
+    background-color: #d4af37;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+/* Styles the website footer */
+footer {
+    padding: 40px 20px 30px;
+    background-color: #002f6c;
+    color: white;
+    text-align: center;
+    border-top: 6px solid #d4af37;
+}
+
+/* Styles the church name in the footer */
+footer h4 {
+    margin: 0 0 15px;
+    color: #d4af37;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+/* Styles the footer paragraphs */
+footer p {
+    margin: 7px 0;
+    color: white;
+    font-size: 14px;
+}
+
+/* ==================================================
+   KCCC RESPONSIVE DESIGN
+   Safe additions to existing website CSS
+   Does not replace existing styles or theme.
+   ================================================== */
+
+
+/* 1. Prevent unwanted horizontal scrolling */
+
+body.kccc-responsive {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* 2. Make images responsive */
+
+body.kccc-responsive img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 3. Make videos and embedded content responsive */
+
+body.kccc-responsive video,
+body.kccc-responsive iframe,
+body.kccc-responsive embed {
+    max-width: 100%;
+}
+
+
+/* 4. Prevent oversized form elements */
+
+body.kccc-responsive input,
+body.kccc-responsive textarea,
+body.kccc-responsive select {
+    max-width: 100%;
+}
+
+
+/* 5. TABLET RESPONSIVENESS
+   Applies to screens 768px and below */
+
+@media screen and (max-width: 768px) {
+
+    body.kccc-responsive {
+        overflow-x: hidden;
+    }
+
+    body.kccc-responsive img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body.kccc-responsive video,
+    body.kccc-responsive iframe {
+        max-width: 100%;
+    }
+
+}
+
+
+/* 6. SMARTPHONE RESPONSIVENESS
+   Applies to screens 480px and below */
+
+@media screen and (max-width: 480px) {
+
+    body.kccc-responsive {
+        min-width: 0;
+    }
+
+    body.kccc-responsive img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    body.kccc-responsive input,
+    body.kccc-responsive textarea,
+    body.kccc-responsive select {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+}
+
+
+/* 7. SMALL SMARTPHONES
+   Applies to screens 360px and below */
+
+@media screen and (max-width: 360px) {
+
+    body.kccc-responsive {
+        overflow-x: hidden;
+    }
+
+    body.kccc-responsive img,
+    body.kccc-responsive video,
+    body.kccc-responsive iframe {
+        max-width: 100%;
+    }
+
+}
